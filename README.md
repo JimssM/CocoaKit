@@ -1,33 +1,33 @@
-**English** | **[简体中文](README-ch.md)**
+ **简体中文** | **[English](README-en.md)**
 
 # CocoaKit
 
-**CocoaKit** is a lightweight Python desktop automation framework based on the MVC architecture, featuring a basic UI example and modular code structure for easy customization and extension.
+**CocoaKit** 是一个基于 MVC 架构的轻量级 Python 桌面自动化框架，提供了一个基础的用户界面示例和模块化的代码结构，可轻松定制和扩展。
 
 ![CocoaKit Logo](logo.png)
 
-## Requirements
+## 环境要求
 
-- Python 3.8 (Make sure to use Python version 3.8 as it ensures compatibility with the framework)
-- Windows OS (CocoaKit is designed specifically for Windows desktop environments)
+- Python 3.8（请确保使用 Python 3.8 版本以保证框架的兼容性）
+- Windows 操作系统（CocoaKit 专为 Windows 桌面环境设计）
 
-## Install dependencies
+## 安装依赖
 
 ```
 pip install -r requirements.txt
 ```
 
-## Features
+## 功能特点
 
-**CocoaKit** integrates the following key technologies and tools:
+**CocoaKit** 集成了以下关键技术和工具：
 
-1. **PyQt5**: Utilized as the GUI framework to provide a flexible and powerful user interface.
-2. **OpenCV, Numpy, PIL**: Implementing the image recognition module for handling various image processing tasks.
-3. **pyautogui, win32api, pynput**: 
-   - Facilitates mouse and keyboard input control.
-   - Includes a Bezier curve function for smooth mouse trajectory movement.
-4. **win32api**: Supports basic window and process functionalities.
-5. **Paddle OCR**: Integrated OCR (Optical Character Recognition) functionality for text recognition in images.
-6. **Fastdeploy with ONNX models**: 
-   - Enables efficient and streamlined object detection using ONNX models.
-7. **SQLite**: Provides a lightweight database solution for data storage and management.
+1. **PyQt5**：作为 GUI 框架，提供灵活且强大的用户界面。
+2. **OpenCV, Numpy, PIL**：实现图像识别模块，用于处理各种图像处理任务。
+3. **pyautogui, win32api, pynput**：
+   - 实现鼠标和键盘输入控制。
+   - 包含贝塞尔曲线函数，用于实现平滑的鼠标轨迹移动。
+4. **win32api**：支持基本的窗口功能和进程功能。
+5. **Paddle OCR**：集成 OCR（光学字符识别）功能，用于识别图像中的文字。
+6. **Fastdeploy 集成 ONNX 模型**：
+   - 使用 ONNX 模型实现高效流畅的目标检测。
+7. **SQLite**：提供轻量级数据库解决方案，用于数据存储和管理。
