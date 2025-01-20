@@ -1,10 +1,15 @@
 #!/usr/bin/env python
 # -*- coding: UTF-8 -*-
-from Application.Control.fileControl import *
 
-mutex = check_single_instance()  # 进行锁，确保只有一个进程运行中
+import sys
+import win32api
+
+from Application.Control.fileControl import check_single_instance, copy_ppocr_file
+from Application.public import static_path
+
+# Ensure only one instance of the application is running
+mutex = check_single_instance()
 copy_ppocr_file(static_path + ".paddleocr")
-
 
 if sys.platform == "win32":
     import ctypes
@@ -16,13 +21,14 @@ from Application.Control.mainControl import MainController
 
 if __name__ == '__main__':
     def clean_up():
-        print("清理资源")
+        # Clean up resources
+        print("Cleaning up resources")
         win32api.CloseHandle(mutex)
 
 
     app = QApplication(sys.argv)
 
-    # Set your App icon。
+    # Set your application icon
     # app.setWindowIcon(QIcon(ui_path + "your_icon.ico"))
 
     main_ui = MainController()
